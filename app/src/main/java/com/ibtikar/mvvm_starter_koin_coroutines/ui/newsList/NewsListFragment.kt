@@ -70,8 +70,7 @@ class NewsListFragment :
         }
 
         settingsIV.setOnClickListener {
-            view?.findNavController()
-                ?.navigate(NewsListFragmentDirections.actionHomeFragmentToSettingsFragment())
+
         }
 
         searchCategoriesFavList.addAll(sharedPreferences.categoriesFav.split(","))
