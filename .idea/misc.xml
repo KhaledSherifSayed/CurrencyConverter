@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable/ic_backspace.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/calculator_fragment.xml" value="0.2" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/choose_language_bottom_dialog.xml" value="0.2421875" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/currencies_list_fragment.xml" value="0.2" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/item_article.xml" value="0.2391304347826087" />
