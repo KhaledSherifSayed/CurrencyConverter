@@ -1,6 +1,7 @@
 package com.ibtikar.mvvm_starter_koin_coroutines.ui.currencyList
 
 
+import androidx.navigation.fragment.findNavController
 import com.ibtikar.mvvm_starter_koin_coroutines.R
 import com.ibtikar.mvvm_starter_koin_coroutines.databinding.CurrenciesListFragmentBinding
 import com.ibtikar.mvvm_starter_koin_coroutines.ui.base.BaseFragmentWithBusiness
@@ -27,7 +28,12 @@ class CurrenciesListFragment :
 
     private fun setupAdapter() {
         currenciesAdapter = CurrenciesAdapter(CurrencyItemClick {
-            //startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(it.url)))
+            findNavController().navigate(
+                CurrenciesListFragmentDirections.actionHomeFragmentToFavoriteListFragment(
+                    it.currencyName,
+                    it.currencyValue
+                )
+            )
         })
         articlesRV.adapter = currenciesAdapter
     }
