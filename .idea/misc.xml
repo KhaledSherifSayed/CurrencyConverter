@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable-v24/bg_bottom_sheet_dialog_fragment.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable/bg_login_edittext.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable/chip_textcolor.xml" value="0.13854166666666667" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable/ic_backspace.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/drawable/placeholder.xml" value="0.13854166666666667" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/calculator_fragment.xml" value="0.2" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/choose_language_bottom_dialog.xml" value="0.2421875" />
         <entry key="..\:/Users/khale/AndroidStudioProjects/currencyConverter/app/src/main/res/layout/currencies_list_fragment.xml" value="0.2" />

@@ -15,7 +15,7 @@ data class CurrencyEntity constructor(
 fun List<CurrencyModelResponse>.asListDatabaseModel() : Array<CurrencyEntity>  {
     return this.map {
         CurrencyEntity(
-            id = it.currencyName + it.currencyValue,
+            id = it.currencyName,
             currencyName = it.currencyName,
             currencyValue = it.currencyValue)
     }.toTypedArray()
