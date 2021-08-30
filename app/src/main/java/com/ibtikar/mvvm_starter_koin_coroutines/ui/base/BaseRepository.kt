@@ -8,7 +8,9 @@ import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import okhttp3.ResponseBody
 import retrofit2.HttpException
+import retrofit2.Response
 import java.net.ConnectException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
@@ -45,6 +47,15 @@ abstract class BaseRepository(val contextProviders: ContextProviders) {
     }
 
     fun <T  : Any> networkHandler(fetch: suspend () -> T) = flow {
+        try {
+            emit(fetch.invoke())
+        } catch (throwable: Throwable) {
+            handleExceptions(throwable)
+        }
+    }.flowOn(contextProviders.IO)
+
+
+    fun <T  : Any> networkEmptyHandler(fetch : () -> Response<T>) = flow {
         try {
             emit(fetch.invoke())
         } catch (throwable: Throwable) {

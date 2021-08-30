@@ -9,18 +9,21 @@
         android:layout_height="match_parent">
 
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/baseCurrencyTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="@dimen/_20sdp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="EUR"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <include
-                android:id="@+id/favorite_toolbar"
-                layout="@layout/toolbar_favorite" />
-        </com.google.android.material.appbar.AppBarLayout>
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -29,13 +32,12 @@
             android:layout_height="0dp"
             android:clipToPadding="false"
             android:padding="4dp"
-            app:spanCount="2"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-            tools:listitem="@layout/item_favorite_article" />
+            app:layout_constraintTop_toBottomOf="@+id/baseCurrencyTV"
+            tools:listitem="@layout/item_currency" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
