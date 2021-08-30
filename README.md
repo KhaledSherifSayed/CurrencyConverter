@@ -1,50 +1,40 @@
 <p align="center">
-  <img src="Preview/articles.jpg" width="100%" height="350"/>
+  <img src="Preview/background.jpg" width="100%" height="350"/>
 </p>
 
-# Popular Articless in Kotlin 👓
+# Currency Converter in Kotlin 💰
 [![GitHub license](https://img.shields.io/badge/License-Khaled-blue.svg)](LICENSE.txt)
 [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23406-2CA3E6.svg?style=flat)](http://androidweekly.net/issues/issue-406)
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 ![Github Followers](https://img.shields.io/github/followers/KhaledSherifSayed?label=Follow&style=social)
-![GitHub forks](https://img.shields.io/github/forks/KhaledSherifSayed/NewsApp?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/KhaledSherifSayed//NewsApp?style=social)
+![GitHub forks](https://img.shields.io/github/forks/KhaledSherifSayed/CurrencyConverter?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/KhaledSherifSayed//CurrencyConverter?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/Meslmawy?label=Follow&style=social)
 
 
-**News App** is a sample  Android application 📱 showing most popular articles of the world 👓 built to demonstrate use of *Modern Android development* tools.
+**Currency Converter App** is a sample  Android application 📱 that converts between USD to YEN, CAD and EUR currencies 👓 built to demonstrate use of *Modern Android development* tools.
  Dedicated to all Android Developers with ❤️. 
 
-***You can Install and test latest Popular Articles app from below 👇***
+***You can Install and test latest Currency Converter app from below 👇***
 
-[![Articles App](https://img.shields.io/badge/Popular👓-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/KhaledSherifSayed/NewsApp/blob/devleop/app/releases/latest/download/app-debug.apk)
+[![Currency Converter](https://img.shields.io/badge/Converter💰-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/KhaledSherifSayed/CurrencyConverter/blob/devleop/app/releases/latest/download/app-debug.apk)
 
 ## Build || Run 
-- You must login [here](https://newsapi.org) getting API-KEY and Update x's values in [Secret-File](https://github.com/KhaledSherifSayed/NewsApp/blob/master/secrets.properties) with your api key.
+- You must login [here](https://fixer.io) getting API-KEY and Update x's values in [Secret-File](https://github.com/KhaledSherifSayed/CurrencyConverter/blob/master/secrets.properties) with your api key.
 
 ## About
-It simply loads **Popular Articles** data from API.Peoples will be always loaded from Remote data (from API). 
+It simply loads **Currencies List** data from API.Currencies will be always loaded from Remote data (from API) in online mode and from db in offline mode. 
 - Clean and Simple Material UI.
 - Clean and Simple Architecture(MVVVM).
 
 
-## Features 
-- user can select country and categories which would like to hear about them in Onboarding Screen. 
-- user see headlines from the selected choices,headlines ordred by latest to oldest.
-- user can open headline in browser.
-- user can search headlines with categories choice and can save his favorite articles.
-
-*Dummy API is used in this app. JSON response is statically hosted [here](https://developer.nytimes.com)*.
+*Dummy API is used in this app. JSON response is statically hosted [here](https://fixer.io)*.
 
 ## ScreenShots
 <p align="center">
-<img src="/Preview/1 (1).png" width="32%"/>
-<img src="/Preview/1 (2).png" width="32%"/>
-<img src="/Preview/1 (3).png" width="32%"/>
-<img src="/Preview/1 (4).png" width="32%"/>
-<img src="/Preview/1 (5).png" width="32%"/>
-<img src="/Preview/1 (6).png" width="32%"/>
-<img src="/Preview/1 (7).png" width="32%"/>
+<img src="/Preview/1(1).png" width="32%"/>
+<img src="/Preview/1(2).png" width="32%"/>
+<img src="/Preview/1(3).png" width="32%"/>
 </p>
 
 
@@ -82,11 +72,10 @@ The lint report will be generated on the following path.
 
 
 ## Soon 🎈💪
- - articles will be always loaded from local database. Remote data (from API) and Local data is always synchronized.
  -  Try with [Hilt-Dagger](https://dagger.dev/hilt/) - Standard library to incorporate Dagger dependency injection into an Android application.
  
 ## Find this repository useful? :heart:
-Support it by joining __[stargazers](https://github.com/KhaledSherifSayed/PopularPeople/stargazers)__ for this repository. :star: <br>
+Support it by joining __[stargazers](https://github.com/KhaledSherifSayed/CurrencyConverter/stargazers)__ for this repository. :star: <br>
 And __[follow](https://github.com/KhaledSherifSayed)__ me for my next creations! 🤩
 
 **Contributed By:** [Khaled Sherif](https://github.com/KhaledSherifSayed)
