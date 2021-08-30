@@ -4,9 +4,13 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
+import com.google.gson.Gson
+import com.ibtikar.mvvm_starter_koin_coroutines.data.models.CurrencyModelResponse
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import java.util.*
+import kotlin.reflect.full.memberProperties
+import com.google.gson.reflect.TypeToken
 
 
 inline fun <reified T> getKoinInstance(): Lazy<T> {
@@ -58,3 +62,20 @@ fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
 
 
 fun EditText.clear() { text.clear() }
+
+fun String.toJsonMap(): Map<String, Any> {
+    return try {
+        Gson().fromJson<Any>(
+            this,
+            object : TypeToken<Map<String, Any>>() {}.type
+        ) as Map<String, Any>
+    } catch (e: Exception) {
+        mapOf()
+    }
+}
+
+fun Map<String, Any>.toCurrenciesList() =
+    this.map { CurrencyModelResponse(it.key, it.value.toString()) }
+
+
+

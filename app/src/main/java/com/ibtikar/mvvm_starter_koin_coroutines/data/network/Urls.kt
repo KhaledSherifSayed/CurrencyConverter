@@ -1,17 +1,17 @@
 package com.ibtikar.mvvm_starter_koin_coroutines.data.network
 
-import com.ibtikar.mvvm_starter_koin_coroutines.data.network.APIS.CONSTANTS.TOP_HEADLINES
+import com.ibtikar.mvvm_starter_koin_coroutines.data.network.APIS.CONSTANTS.LATEST
 
 object APIS {
 
     object CONSTANTS {
-        const val TOP_HEADLINES = "top-headlines"
+        const val LATEST = "latest"
     }
 
     object URL {
 
         object NEWS {
-            const val URL_GET_NEWS = "$TOP_HEADLINES/"
+            const val URL_GET_CURRENCIES = "$LATEST"
         }
 
     }
