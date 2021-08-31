@@ -1,7 +1,7 @@
 package com.ibtikar.mvvm_starter_koin_coroutines.di
 
-import com.ibtikar.mvvm_starter_koin_coroutines.ui.favorite.FavoriteNewsViewModel
-import com.ibtikar.mvvm_starter_koin_coroutines.ui.newsList.NewsViewModel
+import com.ibtikar.mvvm_starter_koin_coroutines.ui.calculator.CalculatorViewModel
+import com.ibtikar.mvvm_starter_koin_coroutines.ui.currencyList.CurrenciesViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -11,9 +11,10 @@ import org.koin.dsl.module
 
 val viewModelModule = module {
     viewModel {
-        NewsViewModel(get(), get())
+        CurrenciesViewModel(get(), get())
     }
+
     viewModel {
-        FavoriteNewsViewModel(get(), get())
+        CalculatorViewModel(get())
     }
 }

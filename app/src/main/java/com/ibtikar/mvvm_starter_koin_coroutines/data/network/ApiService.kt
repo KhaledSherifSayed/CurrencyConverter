@@ -1,8 +1,9 @@
 package com.ibtikar.mvvm_starter_koin_coroutines.data.network
 
-import com.ibtikar.mvvm_starter_koin_coroutines.data.network.annotation.UserAuthentication
-import com.ibtikar.mvvm_starter_koin_coroutines.data.models.AllNewsResponse
-import com.ibtikar.mvvm_starter_koin_coroutines.data.network.APIS.URL.NEWS.URL_GET_NEWS
+import com.google.gson.JsonObject
+import com.ibtikar.mvvm_starter_koin_coroutines.BuildConfig
+import com.ibtikar.mvvm_starter_koin_coroutines.data.network.APIS.URL.NEWS.URL_GET_CURRENCIES
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -11,10 +12,6 @@ import retrofit2.http.Query
  */
 
 interface ApiService {
-    @UserAuthentication
-    @GET(URL_GET_NEWS)
-    suspend fun getAllArticles(
-        @Query(value = "country") country: String,
-        @Query(value = "category") category: String?
-    ): AllNewsResponse
+    @GET(URL_GET_CURRENCIES)
+    suspend fun getAllCurrencies(@Query(value = "access_key") key: String? = BuildConfig.API_KEY): Response<JsonObject>
 }
