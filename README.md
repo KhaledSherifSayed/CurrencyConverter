@@ -17,8 +17,7 @@
 
 ***You can Install and test latest Currency Converter app from below 👇***
 
-[![Currency Converter](https://img.shields.io/badge/Converter💰-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/KhaledSherifSayed/CurrencyConverter/tree/devleop/app/releases/latest/download/app-debug.apk)
-
+[![Currency Converter](https://img.shields.io/badge/Converter💰-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/KhaledSherifSayed/CurrencyConverter/blob/develop/app/releases/latest/download/app-debug.apk
 ## Build || Run 
 - You must login [here](https://fixer.io) getting API-KEY and Update x's values in [Secret-File](https://github.com/KhaledSherifSayed/CurrencyConverter/blob/master/secrets.properties) with your api key.
 
