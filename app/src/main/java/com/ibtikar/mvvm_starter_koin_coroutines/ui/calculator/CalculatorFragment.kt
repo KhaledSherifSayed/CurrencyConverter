@@ -23,16 +23,13 @@ class CalculatorFragment : BaseFragmentWithBusiness<CalculatorFragmentBinding,Ca
 
     private val args: CalculatorFragmentArgs by navArgs()
     override val viewModel: CalculatorViewModel by viewModel()
-    lateinit var binding: CalculatorFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(
-            inflater, R.layout.calculator_fragment, container, false
-        )
-        return binding.apply {
+        super.onCreateView(inflater, container, savedInstanceState)
+        return binder.apply {
             this.lifecycleOwner = this@CalculatorFragment
             this.vm = viewModel
             executePendingBindings()
