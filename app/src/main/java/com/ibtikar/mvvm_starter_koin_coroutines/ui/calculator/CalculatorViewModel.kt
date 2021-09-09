@@ -12,7 +12,7 @@ import com.ibtikar.mvvm_starter_koin_coroutines.utils.erros.ErrorType
  */
 
 class CalculatorViewModel(
-    private val contextProviders: ContextProviders
+    contextProviders: ContextProviders
 ) :
     BaseViewModel(contextProviders) {
 
@@ -26,7 +26,14 @@ class CalculatorViewModel(
         else {
             when {
                 baseCurrencyValue.value?.length!! > 15 -> {
-
+                    setState(
+                        ViewState.Error(
+                            ApplicationException(
+                                ErrorType.UserError,
+                                "maximum 15 number"
+                            )
+                        )
+                    )
                 }
                 result.value?.toDouble() == 0.0 -> baseCurrencyValue.value = text.toString()
                 else -> baseCurrencyValue.value = baseCurrencyValue.value + text.toString()
